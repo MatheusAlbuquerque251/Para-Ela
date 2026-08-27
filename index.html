@@ -1,0 +1,549 @@
+<!-- =========================
+ARQUIVO: index.html
+========================= -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Para o meu amor ❤️</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- FLORES -->
+  <div class="floating-hearts"></div>
+
+  <!-- OVERLAY DO MENU MOBILE -->
+  <div id="overlayMenu" class="overlay-menu"></div>
+
+<!-- MENU MOBILE (drawer) -->
+  <nav id="menuMobile" class="menu-mobile">
+    <a href="#inicio" >Início</a>
+    <a href="#contador">Nós</a>
+    <a href="#motivos" >Motivos</a>
+    <a href="#momentos">Momentos</a>
+    <a href="#cartinha">Cartinhas</a>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="header">
+  <div class="logo">
+    ❤️ Para você, meu amor
+  </div>
+
+  <nav class="menu">
+    <a href="#inicio">Início</a>
+    <a href="#contador">Nós</a>
+    <a href="#motivos">Motivos</a>
+    <a href="#momentos">Momentos</a>
+    <a href="#cartinha">Cartinhas</a>
+  </nav>
+
+  <!-- Botão hamburguer (aparece só no mobile) -->
+  <button id="btnHamburguer" class="hamburguer" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+
+    <div class="hero-text">
+      <h1>
+        Para a minha linda <br>
+        perfeita e única <br>
+        morena de cacau!!❤️
+      </h1>
+
+      <p>
+        Esse espaço foi feito com todo o meu amor,
+        porque você merece o mundo inteiro.
+      </p>
+
+      <button onclick="mostrarMensagem()">
+        Clique aqui ❤️
+      </button>
+    </div>
+
+
+
+  <div class="hero-image" onclick="explodirAmor()">
+
+    <div class="foto-container">
+
+        <img src="imagens/mãos dadas(eu e ela).jpeg" alt="">
+
+        <div class="icone-amor">💌</div>
+
+        <!-- Frase que será escrita -->
+        <div class="frase-secreta">
+            E sempre será... ❤️
+        </div>
+
+        <!-- Flores -->
+        <span class="flor flor1">🌸</span>
+        <span class="flor flor2">🦋</span>
+        <span class="flor flor3">🌹</span>
+        <span class="flor flor4">🌺</span>
+        <span class="flor flor5">🌹</span>
+        <span class="flor flor6">🦋</span>
+
+    </div>
+
+    <span>
+        Meu lugar favorito é ao seu lado 🤍
+    </span>
+
+    </div>
+  </section>
+
+  <!-- MODAL ROMÂNTICO -->
+
+  <div id="modalAmor" class="modal-amor">
+
+    <div class="caixa-amor">
+
+      <div id="textoAmor">
+        Antes de continuar... ❤️
+      </div>
+
+    <button
+      id="btnContinuar"
+      onclick="proximaMensagem()">
+
+      Continuar
+
+    </button>
+
+  </div>
+
+</div>
+
+  <!-- CONTADOR -->
+  <section class="contador" id="contador">
+
+    <h2>Estamos juntos há ❤️</h2>
+
+    <div class="contador-box">
+
+      <div class="tempo">
+        <h3 id="dias">0</h3>
+        <p>Dias</p>
+      </div>
+
+      <div class="tempo">
+        <h3 id="horas">0</h3>
+        <p>Horas</p>
+      </div>
+
+      <div class="tempo">
+        <h3 id="minutos">0</h3>
+        <p>Minutos</p>
+      </div>
+
+      <div class="tempo">
+        <h3 id="segundos">0</h3>
+        <p>Segundos</p>
+      </div>
+
+    </div>
+
+  </section>
+
+<!-- MOTIVOS -->
+
+  <section class="motivos-section" id="motivos">
+
+    <div class="titulo-motivos">
+
+        <h2>
+            50 motivos pelos quais eu amo você ❤️
+        </h2>
+
+        <p>
+            Eu poderia escrever uma vida inteira...
+            <br>
+            Mas resolvi começar com apenas 50. 💌
+        </p>
+
+    </div>
+
+
+    <!-- Partículas -->
+    <div class="particulas"></div>
+
+
+    <!-- Presente -->
+
+    <div class="presente-container">
+
+        <!-- Papel -->
+
+      <div id="papel" class="papel">
+
+        <div class="papel-topo">
+
+            <span id="contadorMotivo">
+
+                Motivo #01
+
+            </span>
+
+      </div>
+
+      <div class="papel-conteudo">
+
+            <p id="textoMotivo">
+
+                Clique no presente...
+
+            </p>
+
+      </div>
+
+      <button
+          id="btnNovoMotivo"
+          class="btn-motivo"
+          onclick="proximoMotivo()">
+
+            🎁 Abrir outro presente
+
+      </button>
+
+    </div>
+
+
+        <div id="presente" class="presente" onclick="abrirPresente()">
+
+            <!-- Brilho -->
+            <div class="brilho"></div>
+
+            <!-- Tampa -->
+            <div class="tampa"></div>
+
+            <!-- Caixa -->
+            <div class="caixa">
+
+                <div class="fita-vertical"></div>
+
+                <div class="fita-horizontal"></div>
+
+            </div>
+
+            <!-- Laço -->
+
+            <div class="laco-esquerdo"></div>
+
+            <div class="laco-direito"></div>
+
+            <div class="no-laco"></div>
+
+        </div>
+
+    </div>
+
+
+
+    
+
+
+    <!-- Área dos corações -->
+
+    <div id="coracoesContainer"
+         class="coracoes-container">
+
+    </div>
+
+
+
+    <!-- Mensagem Final -->
+
+    <div
+        id="mensagemFinal"
+        class="mensagem-final">
+
+        <h3>
+
+            ❤️
+
+        </h3>
+
+        <p>
+
+            Você encontrou os 50 motivos!!!
+
+            <br><br>
+
+            Mas a verdade é que todos os dias eu descubro um novo motivo para te amar, para te cuidar e para fazer você a mulher mais linda desse mundo.
+
+            <br><br>
+
+            A tendência é que essa lista aumente todos os dias, pois pretendo a cada dia escrever um motivo diferente no caderninho da nossa história.
+
+            <br><br>
+
+            Depois de um ano, eu só tenho mais certeza disso! 🌷
+
+        </p>
+
+    </div>
+
+</section>
+
+  <!-- MOMENTOS -->
+  <section class="momentos" id="momentos">
+
+    <h2>Nossos momentos 💞</h2>
+
+    <div class="slider-container">
+
+        <div class="galeria" id="galeria">
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 1.jpeg" alt="">
+                <span>Pós-culto. Amei está com você na sua igreja pela primeira vez. ❤️</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 2.jpeg" alt="">
+                <span>Apenas mais um fim de tarde com você 🌅</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 3.jpeg" alt="">
+                <span>Um de nossos treinos. Amo treinar com você, minha única e exclusiva parceira de treino 💪</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 4.jpeg" alt="">
+                <span>Você me permite ser eu mesmo 💕</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 5.png" alt="">
+                <span>Não é o lugar, sempre é por ser com você. Curtir um banho com você foi incrível ❤️</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 6.jpeg" alt="">
+                <span>Nossa primeira foto juntos 📸</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 7.jpeg" alt="">
+                <span>Está com você nunca é tedioso 🥰</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 8.jpeg" alt="">
+                <span>Aquele surto de autismo em call 🥴</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 9.jpeg" alt="">
+                <span>Uma tarde de paz com você 👩‍❤️‍💋‍👨</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 10.jpeg" alt="">
+                <span>Eu e você 💕</span>
+            </div>
+
+            <!-- DUPLICAÇÃO PARA LOOP INFINITO -->
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 1.jpeg" alt="">
+                <span>Pós-culto. Amei está com você na sua igreja pela primeira vez. ❤️</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 2.jpeg" alt="">
+                <span>Apenas mais um fim de tarde com você 🌅</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 3.jpeg" alt="">
+                <span>Um de nossos treinos. Amo treinar com você, minha única e exclusiva parceira de treino 💪</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 4.jpeg" alt="">
+                <span>Você me permite ser eu mesmo 💕</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 5.png" alt="">
+                <span>Não é o lugar, sempre é por ser com você. Curtir um banho com você foi incrível ❤️</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 6.jpeg" alt="">
+                <span>Nossa primeira foto juntos 📸</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 7.jpeg" alt="">
+                <span>Está com você nunca é tedioso 🥰</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 8.jpeg" alt="">
+                <span>Aquele surto de autismo em call 🥴</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 9.jpeg" alt="">
+                <span>Uma tarde de paz com você 👩‍❤️‍💋‍👨</span>
+            </div>
+
+            <div class="card_gal">
+                <img src="imagens/Eu e ela 10.jpeg" alt="">
+                <span>Eu e você 💕</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- CARTINHA -->
+  <section class="cartinha" id="cartinha">
+
+    <div class="cartinha-box">
+
+      <h2>Uma cartinha para você 💌</h2>
+
+      <p>
+        Amor, obrigado por existir.
+        Obrigado por deixar meus dias mais felizes,
+        mais leves e mais bonitos.
+      </p>
+
+      <p>
+        Eu prometo continuar escolhendo você,
+        todos os dias.
+      </p>
+
+      <button onclick="abrirCarta()">
+        Abrir mensagem especial ❤️
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal">
+
+    <div class="modal-content">
+
+      <span class="fechar" onclick="fecharCarta()">
+        ✖
+      </span>
+
+      <h2>Para o amor da minha vida ❤️</h2>
+
+      <p>
+        Oi, meu amor, como anda o seu dia? você está linda hoje. Hoje finalmente comemoramos o nosso tão aguardado primeiro ano de muitos que virão juntos.
+        Sinceramente, se me perguntassem a um ano atrás eu jamais pensaria que hoje estaria vivendo essa linda história com você, esse último ano tem sido pra
+        mim como um sonho, cada tarde juntos, cada cochilo que tiramos juntos, cada mensagem… tem sido tudo lindo, perfeito, ainda hoje penso que a qualquer
+        momento eu posso simplesmente acordar e perceber que tudo não foi real, eu juro que tenho esse medo. Eu não tenho palavras pra descrever o quanto você
+        tem sido especial pra mim, e é com lágrimas nos olhos que digitalizo essas palavras. Eu queria fazer algo diferente para mostrar um pouco do que está no
+        meu coração, algo que sei que ninguém fez pra você, e pensando nisso, fiz esse site, um espaço que tem uma parte da nossa história, um lugar que você
+        sempre poderá visitar quando sentir minha falta, aqui ficará registrado nosso primeiro ano de namoro.
+      </p>
+
+      <p>
+        Cada detalhe, cada linha de código foram pensados minuciosamente, tudo pra fazer irradiar esse seu lindo sorriso junto desses olhinhos que amo tanto.
+        Então espero que você não pule nada.  Inicialmente, deixo algumas palavras que você já deve ter lido, depois tem a contagem regressiva contabilizando
+        o nosso tempo juntos, depois tem os 50 motivos pelos quais eu amo você(espero que você leia cada um, no final tem uma surpresinha de nada kkkk), depois
+        tem nossos momentos(a gente precisa tirar mais fotos, mas é foto mesmo, não GIFs, não deu pra colocar aqui😔​). 
+      </p>
+
+      <p>
+        Por fim, sobre as músicas, pensei em cada uma de forma exclusiva e não ao acaso. Dito isso, direi porque escolhi cada uma delas para que sempre quando você ouvir,
+        lembre que sempre quando ouço cada uma delas, eu lembro da minha namoradinha.
+      </p>
+
+      <p>
+        ALMA — Escolhi você - Porque, entre tantas pessoas, eu escolheria você de novo. E é essa escolha que quero continuar fazendo todos os dias. <br>
+        ANAVITÓRIA — Trevo (Tu) - Porque você foi uma das melhores sortes que a vida poderia ter me dado. E eu agradeço a Deus por nossos caminhos terem se encontrado. <br>
+        JOSÉ JR — Cheiro de Mar - Porque algumas pessoas têm um jeito de deixar tudo mais leve. Você tem esse efeito em mim, como aquela sensação boa de respirar fundo e
+        simplesmente ficar em paz. <br>
+        COLDPLAY — Yellow - Porque você trouxe uma cor diferente para a minha vida. Depois de você, até as coisas simples parecem ter mais brilho. <br>
+        ED SHEERAN — Perfect - Porque não é sobre você ser perfeita, mas sobre você ser perfeita para mim. É sobre amar quem você é, nos detalhes, nas qualidades e até nas
+        imperfeições. <br>
+        ED SHEERAN — Photograph - Porque quero guardar cada momento nosso. Um dia, quando olharmos para trás, espero que cada foto seja uma pequena lembrança de tudo que
+        construímos. <br>
+        JOHN LEGEND — All of Me - Porque eu não amo só as suas melhores partes. Eu amo você por inteiro, com seu jeito, suas manias, seus sonhos e tudo aquilo que faz você
+        ser você. <br>
+        JORGE & MATEUS — Contrato - Porque quando eu penso em nós, não penso apenas no agora. Penso em continuar escolhendo você, cuidando de nós e construindo uma história
+        juntos. <br>
+        KARI JOBE & CODY CARNES — The Blessing - Porque, acima de tudo, eu quero ver Deus cuidando de você. Mais do que pedir para você ficar comigo, eu peço que
+        Ele te guarde, te abençoe e conduza seus caminhos. <br>
+        LOURENA & SANT — Dizeres - Porque existem sentimentos que são difíceis de explicar. Às vezes eu não encontro as palavras certas, mas espero que você consiga enxergar
+        em cada atitude minha o quanto é importante para mim. <br>
+        MARCELO SISSÁ & CARTAMOR - Salmos 23:1-2 - Porque quero que nossa história tenha Deus como guia. Que nunca nos falte direção, cuidado e paz para caminhar juntos. <br>
+        MELIM — Meu Abrigo - Porque você se tornou um lugar onde meu coração encontra paz. Em meio a tanta coisa acontecendo, estar com você faz tudo parecer um pouco mais
+        tranquilo. <br>
+        MELIM - Ouvi Dizer - Porque algumas coisas simplesmente parecem destinadas a acontecer. E conhecer você foi uma dessas coisas que fizeram tudo ficar mais bonito. <br>
+        MITSKI - My Love Mine All Mine - Porque existe um amor que eu sinto como algo muito meu, muito nosso. Um sentimento que eu quero cuidar, valorizar e levar comigo por
+        muito tempo. <br>
+        NANDO REIS & ANA CAÑAS — Pra Você Guardei o Amor - Porque eu quero que você saiba que existe em mim um amor que eu escolhi guardar para você. Um amor que cresce,
+        amadurece e ganha novos significados com o tempo. <br>
+        LUIZ LINZ — Poesia Acústica 15 - Porque amar também é encontrar beleza nas pequenas coisas. E, de alguma forma, você transformou momentos comuns em lembranças que
+        parecem poesia. <br>
+        OTOTH — Passarinhos - Porque você me lembra liberdade, leveza e aquela sensação gostosa de simplesmente estar bem. Como se, ao seu lado, eu pudesse ser exatamente
+        quem sou. <br>
+        RUBEL & ANAVITÓRIA — Partilhar - Porque eu não quero apenas viver momentos com você; quero compartilhar a vida. Os sonhos, as conquistas, os dias difíceis,
+        as alegrias e tudo aquilo que ainda vamos viver. <br>
+        SPARKLE — Your Name - Porque algumas pessoas aparecem na nossa vida e deixam uma marca que parece impossível de apagar. Você se tornou uma parte muito especial
+        da minha história. <br>
+        STEPHEN SANCHEZ — Until I Found You - Porque parece que tudo fez mais sentido depois que encontrei você. Como se, depois de tanto caminhar, eu finalmente tivesse
+        encontrado alguém que eu quero ter por perto. (Essa descreve porque quero que seja você, você foi a resposta das minhas orações). <br>
+      </p>
+
+      <p>
+        Enfim, meu amor, amo você. Amei ontem, amo hoje e amarei sempre e sempre. Beijinhos múltiplos pra minha morena de cacau.❤️❤️❤️
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer>
+    Feito com todo o meu amor para você ❤️
+  </footer>
+
+  <!-- PLAYLIST -->
+  <div class="music-widget">
+
+    <div class="music-info">
+        <span id="musicName">🎵 Nossa Playlist</span>
+    </div>
+
+    <div class="music-controls">
+        <button onclick="toggleMusic()">▶️</button>
+        <button onclick="nextMusic()">⏭️</button>
+    </div>
+
+</div>
+
+<audio id="player"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
